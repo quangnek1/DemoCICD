@@ -68,6 +68,7 @@ csharp_style_expression_bodied_local_functions = true:error
 
 # IDE0008: Use explicit type
 dotnet_diagnostic.IDE0008.severity = suggestion
+dotnet_diagnostic.CA1307.severity = none
 
 # IDE0011: Add braces
 dotnet_diagnostic.IDE0011.severity = none
@@ -80,10 +81,12 @@ dotnet_diagnostic.IDE0058.severity = none
 # IDE0053: Use expression body for lambda expression
 dotnet_diagnostic.IDE0053.severity = none
 csharp_using_directive_placement = outside_namespace:error
+dotnet_diagnostic.SA1200.severity = none
 csharp_prefer_simple_using_statement = true:suggestion
 csharp_prefer_system_threading_lock = true:suggestion
 csharp_style_throw_expression = true:suggestion
 csharp_style_prefer_null_check_over_type_check = true:suggestion
+
 
 [*.{cs,vb}]
 dotnet_style_prefer_simplified_boolean_expressions = true:suggestion
