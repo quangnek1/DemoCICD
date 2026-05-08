@@ -1,0 +1,8 @@
+2026-05-08 14:23:23.168 +07:00 [INF] Now listening on: http://localhost:5000
+2026-05-08 14:23:23.276 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-08 14:23:23.279 +07:00 [INF] Hosting environment: Development
+2026-05-08 14:23:23.281 +07:00 [INF] Content root path: D:\12. .NET CleanCode\Demo\DemoCICD\src\DemoCICD.API
+2026-05-08 14:23:34.825 +07:00 [WRN] Failed to determine the https port for redirect.
+2026-05-08 14:23:45.173 +07:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-05-08 14:23:46.430 +07:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2026-05-08 14:23:46.497 +07:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
