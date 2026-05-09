@@ -1,7 +1,10 @@
+using DemoCICD.API.DependencyInjection.Extensions;
 using DemoCICD.Application.DependencyInjection.Extensions;
 using DemoCICD.Contract.Logging;
 using DemoCICD.Persistence.DependencyInjection.Extensions;
 using DemoCICD.Persistence.DependencyInjection.Options;
+using DemoCICD.Presentation.DependencyInjection.Extensions;
+using MicroElements.Swashbuckle.FluentValidation.AspNetCore;
 using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -23,13 +26,20 @@ try
     builder.Services.AddControllers()
         .AddApplicationPart(DemoCICD.Presentation.AssemblyReference.Assembly);
 
+    builder.Services
+        .AddSwaggerGenNewtonsoftSupport()
+        .AddFluentValidationRulesToSwagger()
+        .AddEndpointsApiExplorer()
+        .AddSwagger();
+
+    builder.Services.AddApiVersioningConfiguration();
+
     var app = builder.Build();
 
     // Configure the HTTP request pipeline.
-    if (app.Environment.IsDevelopment())
+    if (app.Environment.IsDevelopment() || builder.Environment.IsStaging())
     {
-        app.UseSwagger();
-        app.UseSwaggerUI();
+        app.ConfigureSwagger();
     }
 
     //app.UseHttpsRedirection();

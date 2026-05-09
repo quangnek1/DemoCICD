@@ -1,0 +1,308 @@
+2026-05-09 07:50:46.208 +07:00 [INF] Now listening on: http://localhost:5000
+2026-05-09 07:50:46.541 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-09 07:50:46.544 +07:00 [INF] Hosting environment: Development
+2026-05-09 07:50:46.546 +07:00 [INF] Content root path: D:\12. .NET CleanCode\Demo\DemoCICD\src\DemoCICD.API
+2026-05-09 07:50:54.149 +07:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The constraint reference 'apiVersion' could not be resolved to a type. Register the constraint type with 'Microsoft.AspNetCore.Routing.RouteOptions.ConstraintMap'.
+   at Microsoft.AspNetCore.Routing.DefaultParameterPolicyFactory.Create(RoutePatternParameterPart parameter, String inlineText)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.CreateCandidate(Endpoint endpoint, Int32 score)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.CreateCandidates(IReadOnlyList`1 endpoints)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.Build()
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher.CreateMatcher(IReadOnlyList`1 endpoints)
+   at Microsoft.AspNetCore.Routing.DataSourceDependentCache`1.Initialize()
+   at System.Threading.LazyInitializer.EnsureInitializedCore[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher..ctor(EndpointDataSource dataSource, Lifetime lifetime, Func`1 matcherBuilderFactory)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherFactory.CreateMatcher(EndpointDataSource dataSource)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.InitializeCoreAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.<Invoke>g__AwaitMatcher|8_0(EndpointRoutingMiddleware middleware, HttpContext httpContext, Task`1 matcherTask)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-05-09 07:50:56.028 +07:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The constraint reference 'apiVersion' could not be resolved to a type. Register the constraint type with 'Microsoft.AspNetCore.Routing.RouteOptions.ConstraintMap'.
+   at Microsoft.AspNetCore.Routing.DefaultParameterPolicyFactory.Create(RoutePatternParameterPart parameter, String inlineText)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.CreateCandidate(Endpoint endpoint, Int32 score)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.CreateCandidates(IReadOnlyList`1 endpoints)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.Build()
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher.CreateMatcher(IReadOnlyList`1 endpoints)
+   at Microsoft.AspNetCore.Routing.DataSourceDependentCache`1.Initialize()
+   at System.Threading.LazyInitializer.EnsureInitializedCore[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher..ctor(EndpointDataSource dataSource, Lifetime lifetime, Func`1 matcherBuilderFactory)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherFactory.CreateMatcher(EndpointDataSource dataSource)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.InitializeCoreAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.<Invoke>g__AwaitMatcher|8_0(EndpointRoutingMiddleware middleware, HttpContext httpContext, Task`1 matcherTask)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-05-09 07:55:26.543 +07:00 [INF] Now listening on: http://localhost:5000
+2026-05-09 07:55:26.720 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-09 07:55:26.725 +07:00 [INF] Hosting environment: Development
+2026-05-09 07:55:26.730 +07:00 [INF] Content root path: D:\12. .NET CleanCode\Demo\DemoCICD\src\DemoCICD.API
+2026-05-09 07:55:32.193 +07:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The constraint reference 'apiVersion' could not be resolved to a type. Register the constraint type with 'Microsoft.AspNetCore.Routing.RouteOptions.ConstraintMap'.
+   at Microsoft.AspNetCore.Routing.DefaultParameterPolicyFactory.Create(RoutePatternParameterPart parameter, String inlineText)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.CreateCandidate(Endpoint endpoint, Int32 score)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.CreateCandidates(IReadOnlyList`1 endpoints)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.Build()
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher.CreateMatcher(IReadOnlyList`1 endpoints)
+   at Microsoft.AspNetCore.Routing.DataSourceDependentCache`1.Initialize()
+   at System.Threading.LazyInitializer.EnsureInitializedCore[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher..ctor(EndpointDataSource dataSource, Lifetime lifetime, Func`1 matcherBuilderFactory)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherFactory.CreateMatcher(EndpointDataSource dataSource)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.InitializeCoreAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.<Invoke>g__AwaitMatcher|8_0(EndpointRoutingMiddleware middleware, HttpContext httpContext, Task`1 matcherTask)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-05-09 07:55:34.087 +07:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The constraint reference 'apiVersion' could not be resolved to a type. Register the constraint type with 'Microsoft.AspNetCore.Routing.RouteOptions.ConstraintMap'.
+   at Microsoft.AspNetCore.Routing.DefaultParameterPolicyFactory.Create(RoutePatternParameterPart parameter, String inlineText)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.CreateCandidate(Endpoint endpoint, Int32 score)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.CreateCandidates(IReadOnlyList`1 endpoints)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.AddNode(DfaNode node, DfaState[] states, Int32 exitDestination)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherBuilder.Build()
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher.CreateMatcher(IReadOnlyList`1 endpoints)
+   at Microsoft.AspNetCore.Routing.DataSourceDependentCache`1.Initialize()
+   at System.Threading.LazyInitializer.EnsureInitializedCore[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher..ctor(EndpointDataSource dataSource, Lifetime lifetime, Func`1 matcherBuilderFactory)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherFactory.CreateMatcher(EndpointDataSource dataSource)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.InitializeCoreAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.<Invoke>g__AwaitMatcher|8_0(EndpointRoutingMiddleware middleware, HttpContext httpContext, Task`1 matcherTask)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-05-09 08:01:58.552 +07:00 [INF] Now listening on: http://localhost:5000
+2026-05-09 08:01:58.818 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-09 08:01:58.822 +07:00 [INF] Hosting environment: Development
+2026-05-09 08:01:58.824 +07:00 [INF] Content root path: D:\12. .NET CleanCode\Demo\DemoCICD\src\DemoCICD.API
+2026-05-09 08:06:00.430 +07:00 [INF] Now listening on: http://localhost:5000
+2026-05-09 08:06:00.561 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-09 08:06:00.567 +07:00 [INF] Hosting environment: Development
+2026-05-09 08:06:00.570 +07:00 [INF] Content root path: D:\12. .NET CleanCode\Demo\DemoCICD\src\DemoCICD.API
+2026-05-09 08:06:18.013 +07:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-05-09 08:06:21.004 +07:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2026-05-09 08:06:21.059 +07:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-05-09 08:18:13.513 +07:00 [INF] Now listening on: http://localhost:5000
+2026-05-09 08:18:13.640 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-09 08:18:13.644 +07:00 [INF] Hosting environment: Development
+2026-05-09 08:18:13.647 +07:00 [INF] Content root path: D:\12. .NET CleanCode\Demo\DemoCICD\src\DemoCICD.API
+2026-05-09 08:18:13.670 +07:00 [DBG] FluentValidationRules Created
+2026-05-09 08:18:13.673 +07:00 [DBG] FluentValidationRules Created
+2026-05-09 08:18:13.697 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:18:13.762 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:18:13.766 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:18:13.768 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:18:13.771 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:18:13.777 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:18:13.782 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:18:13.784 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:18:13.787 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:18:13.790 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:18:13.792 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:18:13.793 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:18:13.795 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:18:13.798 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:18:13.800 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:18:13.802 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:18:13.804 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:18:13.821 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:18:13.824 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:18:13.831 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:18:13.834 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:18:13.836 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:18:13.837 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:18:13.838 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:18:13.840 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:18:13.842 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:18:13.844 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:18:13.847 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:18:13.850 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:18:13.852 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:18:13.855 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:18:13.857 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:18:13.860 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:18:13.863 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:18:13.865 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:18:13.868 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:18:13.871 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:18:13.873 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:18:13.875 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:18:13.878 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:18:13.881 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:18:13.884 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:18:13.887 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:18:13.891 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:18:13.894 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:18:13.898 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:18:13.900 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:18:13.903 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:18:13.906 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:19:58.531 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:19:58.539 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:19:58.543 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:19:58.546 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:19:58.549 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:19:58.554 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:19:58.556 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:19:58.558 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:19:58.560 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:19:58.562 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:19:58.563 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:19:58.565 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:19:58.568 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:19:58.570 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:19:58.572 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:19:58.574 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:19:58.576 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:19:58.577 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:19:58.579 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:19:58.582 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:19:58.583 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:19:58.585 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:19:58.587 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:19:58.589 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:19:58.590 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:19:58.592 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:19:58.594 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:19:58.596 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:19:58.597 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:19:58.599 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:19:58.601 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:19:58.603 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:19:58.606 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:19:58.608 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:19:58.610 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:19:58.612 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:19:58.615 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:19:58.617 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:19:58.620 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:19:58.622 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:19:58.623 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:19:58.626 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:19:58.628 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:19:58.630 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:19:58.632 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:19:58.634 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:19:58.635 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:19:58.637 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:19:58.640 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:20:02.980 +07:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-05-09 08:20:03.574 +07:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2026-05-09 08:20:03.633 +07:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-05-09 08:25:08.490 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:25:08.494 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:25:08.500 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:25:08.503 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:25:08.505 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:25:08.508 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:25:08.512 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:25:08.514 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:25:08.516 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:25:08.519 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:25:08.521 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:25:08.523 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:25:08.526 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:25:08.528 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:25:08.530 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:25:08.533 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:25:08.535 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:25:08.537 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:25:08.540 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:25:08.543 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:25:08.545 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:25:08.547 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:25:08.549 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:25:08.551 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:25:08.553 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:25:08.556 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:25:08.559 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:25:08.561 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:25:08.563 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:25:08.565 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:25:08.567 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:25:08.570 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:25:08.572 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:25:08.575 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:25:08.577 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:25:08.579 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:25:08.582 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:25:08.584 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:25:08.586 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:25:08.589 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:25:08.591 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:25:08.594 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:25:08.597 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:25:08.599 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:25:08.602 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:25:08.604 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:25:08.606 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:25:08.608 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:25:08.611 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:27:18.559 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:27:18.563 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:27:18.569 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:27:18.572 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:27:18.575 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:27:18.577 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:27:18.581 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:27:18.583 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:27:18.586 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:27:18.588 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:27:18.590 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:27:18.592 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:27:18.594 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:27:18.596 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:27:18.598 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:27:18.600 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:27:18.602 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:27:18.604 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:27:18.606 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:27:18.608 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:27:18.609 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:27:18.611 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:27:18.613 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:27:18.614 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:27:18.616 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:27:18.618 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:27:18.620 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:27:18.622 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:27:18.624 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:27:18.625 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:27:18.627 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:27:18.629 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:27:18.631 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:27:18.633 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:27:18.635 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:27:18.637 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:27:18.640 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:27:18.642 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:27:18.644 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:27:18.645 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:27:18.647 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:27:18.649 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:27:18.651 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:27:18.653 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:27:18.655 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:27:18.657 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:27:18.658 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:27:18.660 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.
+2026-05-09 08:27:18.662 +07:00 [WRN] ValidatorFactory is not provided. Please register FluentValidation.

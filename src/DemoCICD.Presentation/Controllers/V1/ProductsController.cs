@@ -1,4 +1,5 @@
-﻿using DemoCICD.Contract.Abstractions.Shared;
+﻿using Asp.Versioning;
+using DemoCICD.Contract.Abstractions.Shared;
 using DemoCICD.Contract.Emumerations;
 using DemoCICD.Contract.Extensions;
 using DemoCICD.Contract.Services.Product;
@@ -9,6 +10,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace DemoCICD.Presentation.Controllers.V1;
 
+[ApiVersion(1)]
 public class ProductsController : ApiController
 {
     public ProductsController(ISender sender) : base(sender)

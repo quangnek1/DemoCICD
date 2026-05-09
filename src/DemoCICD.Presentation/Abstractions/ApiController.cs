@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace DemoCICD.Presentation.Abstractions;
 
 [ApiController]
-[Route("api/[controller]")]
+[Route("api/v{version:apiVersion}/[controller]")]
 public abstract class ApiController : ControllerBase
 {
     protected readonly ISender Sender;
