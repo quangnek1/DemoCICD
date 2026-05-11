@@ -77,3 +77,34 @@ Dapper Ref:
 
 https://www.learndapper.com/saving-data/insert
 https://github.com/CodeMazeBlog/CodeMazeGuides/tree/main/csharp-design-patterns
+
+src
+├── DemoCICD.Application
+│   ├── UserCases
+│   │   └── V1
+│   │       └── Commands
+│   │           └── ImprovementProposal
+│   │               ├── CreateImprovementProposal
+│   │               │   ├── CreateImprovementProposalCommand.cs
+│   │               │   ├── CreateImprovementProposalCommandHandler.cs
+│   │               │   ├── CreateImprovementProposalValidator.cs
+│   │               │   └── MappingProfile.cs
+│   │
+│   ├── Services
+│   │   └── ImprovementProposal
+│   │       ├── ITrackingService.cs
+│   │       ├── IContentService.cs
+│   │       ├── IAttachmentService.cs
+│   │       ├── TrackingService.cs
+│   │       ├── ContentService.cs
+│   │       └── AttachmentService.cs
+│   │
+│   └── Abstractions
+│       └── Services
+│           ├── ITrackingService.cs
+│           ├── IContentService.cs
+│           └── IAttachmentService.cs
+│
+├── DemoCICD.Domain
+├── DemoCICD.Persistence
+└── DemoCICD.Presentation

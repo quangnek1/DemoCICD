@@ -1,4 +1,4 @@
-﻿namespace DemoCICD.Contract.Services.Product;
+﻿namespace DemoCICD.Contract.Services.V1.Product;
 public class Response
 {
     public record ProductResponse(

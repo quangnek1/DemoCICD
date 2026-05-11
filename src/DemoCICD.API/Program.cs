@@ -1,4 +1,5 @@
 using DemoCICD.API.DependencyInjection.Extensions;
+using DemoCICD.API.Middleware;
 using DemoCICD.Application.DependencyInjection.Extensions;
 using DemoCICD.Contract.Logging;
 using DemoCICD.Persistence.DependencyInjection.Extensions;
@@ -14,6 +15,7 @@ Log.Information(messageTemplate: $"Starting {builder.Environment.EnvironmentName
 try
 {
     builder.Services.AddSwaggerGen();
+    builder.Services.AddTransient<ExceptionHandlingMiddleware>();
 
     //Add Configuration
     builder.Services.AddConfigureMediaR();
@@ -36,6 +38,8 @@ try
 
     var app = builder.Build();
 
+    app.UseMiddleware<ExceptionHandlingMiddleware>();
+
     // Configure the HTTP request pipeline.
     if (app.Environment.IsDevelopment() || builder.Environment.IsStaging())
     {
@@ -49,7 +53,6 @@ try
     app.MapControllers();
 
     app.Run();
-
 }
 catch (Exception ex)
 {
