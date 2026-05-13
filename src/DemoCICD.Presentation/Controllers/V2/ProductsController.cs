@@ -26,30 +26,12 @@ public class ProductsController : ApiController
         return Ok(result);
     }
 
-    //[HttpGet(Name = "GetProducts")]
-    //[ProducesResponseType(type: typeof(Result<IEnumerable<Response.ProductResponse>>), statusCode: StatusCodes.Status200OK)]
-    //[ProducesResponseType(statusCode: StatusCodes.Status404NotFound)]
-    //public async Task<IActionResult> Products(CancellationToken cancellationToken)
-    //{
-    //    var result = await Sender.Send(new Query.GetProductQuery(), cancellationToken);
-    //    return Ok(result);
-    //}
-
     [HttpGet(Name = "GetProducts")]
     [ProducesResponseType(type: typeof(Result<IEnumerable<Response.ProductResponse>>), statusCode: StatusCodes.Status200OK)]
     [ProducesResponseType(statusCode: StatusCodes.Status404NotFound)]
-    public async Task<IActionResult> GetProducts(string? searchTerm = null,
-        string? sortColumn = null,
-        string? sortOrder = null,
-        string? sortColumnAndOrder = null,
-        int pageIndex = 1,
-        int pageSize = 10)
+    public async Task<IActionResult> GetProducts()
     {
-        var result = await Sender.Send(new Query.GetProductQuery(searchTerm, sortColumn,
-            SortOrderExtension.ConvertStringToSortOrder(sortOrder),
-            SortOrderExtension.ConvertStringToSortOrderV2(sortColumnAndOrder),
-            pageIndex,
-            pageSize));
+        var result = await Sender.Send(new Query.GetProductQuery());
 
         return Ok(result);
     }

@@ -11,4 +11,10 @@
     <ProjectReference Include="..\DemoCICD.Persistence\DemoCICD.Persistence.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Services\Email\Models\" />
+    <Folder Include="Services\Email\Templates\" />
+    <Folder Include="Common\" />
+  </ItemGroup>
+
 </Project>

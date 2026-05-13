@@ -2,6 +2,7 @@ using DemoCICD.API.DependencyInjection.Extensions;
 using DemoCICD.API.Middleware;
 using DemoCICD.Application.DependencyInjection.Extensions;
 using DemoCICD.Contract.Logging;
+using DemoCICD.Infrastructure.Dapper.DependencyInjection.Extensions;
 using DemoCICD.Persistence.DependencyInjection.Extensions;
 using DemoCICD.Persistence.DependencyInjection.Options;
 using DemoCICD.Presentation.DependencyInjection.Extensions;
@@ -23,6 +24,7 @@ try
     builder.Services.AddSqlConfiguration();
     builder.Services.AddRepositoryBaseConfiguration();
     builder.Services.AddConfigurationAutoMapper();
+    builder.Services.AddInfrastructureDapper();
 
     // Api
     builder.Services.AddControllers()

@@ -8,7 +8,11 @@ public class ServiceProfile : Profile
 {
     public ServiceProfile()
     {
+        // V1
         CreateMap<Product, Response.ProductResponse>();
         CreateMap<PagedResult<Product>, PagedResult<Response.ProductResponse>>().ReverseMap();
+
+        // V2
+        CreateMap<Product, Contract.Services.V2.Product.Response.ProductResponse>().ReverseMap();
     }
 }
