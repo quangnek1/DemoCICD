@@ -8,6 +8,8 @@ using DemoCICD.Persistence.DependencyInjection.Options;
 using DemoCICD.Presentation.DependencyInjection.Extensions;
 using MicroElements.Swashbuckle.FluentValidation.AspNetCore;
 using Serilog;
+using DemoCICD.Presentation.APIs.Products;
+using Carter;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Host.UseSerilog(Serilogger.Configure);
@@ -38,9 +40,17 @@ try
 
     builder.Services.AddApiVersioningConfiguration();
 
+    builder.Services.AddCarter();
+
     var app = builder.Build();
 
     app.UseMiddleware<ExceptionHandlingMiddleware>();
+
+    // Add API Endpoint
+    app.NewVersionedApi("products-minimal-show-on-swagger").MapProductApiV1().MapProductApiV2();
+
+    // Add API Endpoint with Carter
+    app.MapCarter();
 
     // Configure the HTTP request pipeline.
     if (app.Environment.IsDevelopment() || builder.Environment.IsStaging())
